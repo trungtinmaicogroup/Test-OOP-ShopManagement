@@ -17,13 +17,13 @@ namespace ShopManagement
         public void printMenu()
         {
             Console.Clear();
-            Console.WriteLine("******************************************************́́́***************");
-            Console.WriteLine("*   Welcome to my Shop                                              *");
-            Console.WriteLine("*   Select the option bellow (1 ~ 3):                               *");
-            Console.WriteLine("*   1. Show all invoices.                                           *");
-            Console.WriteLine("*   2. Add invoice.                                                 *");
-            Console.WriteLine("*   3. Quit.                                                        *");
-            Console.WriteLine("*********************************************************************́́́́́");
+            Console.WriteLine("**************************************************************");
+            Console.WriteLine("*   Welcome to my Shop                                       *");
+            Console.WriteLine("*   Select the option bellow (1 ~ 3):                        *");
+            Console.WriteLine("*   1. Show all invoices.                                    *");
+            Console.WriteLine("*   2. Add invoice.                                          *");
+            Console.WriteLine("*   3. Quit.                                                 *");
+            Console.WriteLine("**************************************************************");
         }
 
         public void addInvoice()
