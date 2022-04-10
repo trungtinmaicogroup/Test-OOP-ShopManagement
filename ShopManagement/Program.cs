@@ -1,10 +1,12 @@
 ﻿using ShopManagement.trungtin.utils;
+using ShopManagement.trungtin.invoices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
-using ShopManagement.trungtin.invoices;
+
 namespace ShopManagement
 {
     internal class Program
@@ -39,9 +41,9 @@ namespace ShopManagement
                             break;
                         }
                      case 3:
-                        {
-                            MyIO.changeColor("Bye bye!!!~~\nSee you again!!~~~", ConsoleColor.Blue);
-                            Cons
+                        {                        
+                            MyIO.changeColor("Bye bye!!!~~\nSee you again!!~~~",ConsoleColor.Blue);
+                            Thread.Sleep(2000);
                             break;
                         }
                 }

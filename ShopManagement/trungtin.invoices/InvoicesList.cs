@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ShopManagement
+namespace ShopManagement.trungtin.invoices
 {
     internal class InvoicesList : List<Invoices>
     {

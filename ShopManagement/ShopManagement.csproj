@@ -46,6 +46,7 @@
     <Compile Include="trungtin.customers\Customers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="trungtin.invoices\InvoicesList.cs" />
     <Compile Include="trungtin.invoices\InvoiceDetails.cs" />
     <Compile Include="trungtin.products\airconditioners\AirConditioners.cs" />
     <Compile Include="trungtin.products\airconditioners\OneWayAC.cs" />
