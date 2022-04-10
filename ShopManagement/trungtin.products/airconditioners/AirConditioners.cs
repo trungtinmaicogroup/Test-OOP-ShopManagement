@@ -12,9 +12,9 @@ namespace ShopManagement.trungtin.products.airconditioners
         public AirConditioners() { 
         
         }
-        public AirConditioners(string _id, string _name, string _placeOfProduction, bool _hasInverter) : base(_id, _name, _placeOfProduction)
+        public AirConditioners(string id, string name, string placeOfProduction, bool hasInverter) : base(id, name, placeOfProduction)
         {
-            Inverter = _hasInverter;
+            Inverter = hasInverter;
         }
         public bool Inverter
         {

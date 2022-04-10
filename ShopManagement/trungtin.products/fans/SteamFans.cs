@@ -14,10 +14,10 @@ namespace ShopManagement.trungtin.products.fans
         private const string ID_REGEX = "^SMF[0-9]{3}$";
 
         public SteamFans() { input(); }
-        public SteamFans(string _id, string _name, string _placeOfProduction, double _waterCapacity) : base(_id, _name, _placeOfProduction)
+        public SteamFans(string id, string name, string placeOfProduction, double waterCapacity) : base(id, name, placeOfProduction)
         {
-            WaterCapacity = _waterCapacity;
-            this._price = _waterCapacity * 400;
+            WaterCapacity = waterCapacity;
+            this._price = waterCapacity * 400;
         }
         public double WaterCapacity
         {

@@ -13,7 +13,7 @@ namespace ShopManagement.trungtin.products.fans
         private const string ID_REGEX = "^SDF[0-9]{3}$";
 
         public StandFans() { input(); }
-        public StandFans(string _id, string _name, string _placeOfProduction) : base(_id, _name, _placeOfProduction)
+        public StandFans(string id, string name, string placeOfProduction) : base(id, name, placeOfProduction)
         {
             this._price = 500;
         }

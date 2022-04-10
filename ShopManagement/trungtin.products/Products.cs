@@ -18,11 +18,11 @@ namespace ShopManagement.trungtin.products
         {
 
         }
-        public Products(string _id, string _name, string _placeOfProduction)
+        public Products(string id, string name, string placeOfProduction)
         {
-            Id = _id;
-            Name = _name;
-            PlaceOfProduction = _placeOfProduction;
+            Id = id;
+            Name = name;
+            PlaceOfProduction = placeOfProduction;
         }
 
         public string Id

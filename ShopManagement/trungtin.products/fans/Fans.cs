@@ -12,7 +12,7 @@ namespace ShopManagement.trungtin.fans
     public class Fans : Products
     {
         public Fans() { }
-        public Fans(string _id, string _name, string _placeOfProduction) : base(_id, _name, _placeOfProduction)
+        public Fans(string id, string name, string placeOfProduction) : base(id, name, placeOfProduction)
         {
 
         }

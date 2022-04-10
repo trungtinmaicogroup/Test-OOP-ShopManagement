@@ -14,10 +14,10 @@ namespace ShopManagement.trungtin.products.fans
         private const string ID_REGEX = "^ELF[0-9]{3}$";
 
         public ElectricFans() { input(); }
-        public ElectricFans(string _id, string _name, string _placeOfProduction, double _batteryCapacity) : base(_id, _name, _placeOfProduction)
+        public ElectricFans(string id, string name, string placeOfProduction, double batteryCapacity) : base(id, name, placeOfProduction)
         {
-            BatteryCapacity = _batteryCapacity;
-            this._price = _batteryCapacity * 500;
+            BatteryCapacity = batteryCapacity;
+            this._price = batteryCapacity * 500;
         }
         public double BatteryCapacity
         {

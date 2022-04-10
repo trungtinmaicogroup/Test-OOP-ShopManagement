@@ -14,10 +14,10 @@ namespace ShopManagement.trungtin.products.airconditioners
         private const string ID_REGEX = "^ACT[0-9]{3}$";
 
         public TwoWayAC() { input(); }
-        public TwoWayAC(string _id, string _name, string _placeOfProduction, bool _hasInverter, bool _hasDeodorizationTech, bool _hasAntibacterialTech) : base(_id, _name, _placeOfProduction, _hasInverter)
+        public TwoWayAC(string id, string name, string placeOfProduction, bool hasInverter, bool hasDeodorizationTech, bool hasAntibacterialTech) : base(id, name, placeOfProduction, hasInverter)
         {
-            HasDeodorizationTech = _hasDeodorizationTech;
-            HasAntibacterialTech = _hasAntibacterialTech;
+            HasDeodorizationTech = hasDeodorizationTech;
+            HasAntibacterialTech = hasAntibacterialTech;
             this._price = (this._hasInverter ? 2500 : 2000) + (this._hasAntibacterialTech ? 500 : 0) + (this._hasDeodorizationTech ? 500 : 0);
         }
         public bool HasDeodorizationTech

@@ -11,7 +11,7 @@ namespace ShopManagement.trungtin.products.airconditioners
     {
         private const string ID_REGEX = "^ACO[0-9]{3}$";
         public OneWayAC() { input(); }
-        public OneWayAC(string _id, string _name, string _placeOfProduction, bool _hasInverter) : base(_id, _name, _placeOfProduction, _hasInverter)
+        public OneWayAC(string id, string name, string placeOfProduction, bool hasInverter) : base(id, name, placeOfProduction, hasInverter)
         {
             this._price = this._hasInverter ? 1500 : 1000;
         }

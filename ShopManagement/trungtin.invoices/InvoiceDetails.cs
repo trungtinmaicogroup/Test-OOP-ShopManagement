@@ -18,11 +18,11 @@ namespace ShopManagement.trungtin.invoices
         {
 
         }
-        public InvoiceDetails(Products _product, int _quantity = 1)
+        public InvoiceDetails(Products product, int quantity = 1)
         {
-            Product = _product;
-            Quantity = _quantity;
-            Total = _quantity * _product.Price;
+            Product = product;
+            Quantity = quantity;
+            Total = quantity * product.Price;
         }
         public Products Product
         {
