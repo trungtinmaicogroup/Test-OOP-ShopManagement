@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ShopManagement.trungtin.invoices;
 namespace ShopManagement
 {
     internal class Program
@@ -40,9 +40,8 @@ namespace ShopManagement
                         }
                      case 3:
                         {
-                            //list.saveFile(fileName);
-                            //System.out.println(MyToys.getGreenColor("Your datas have been saved in *" + fileName + "*"));
-                            //System.out.println(MyToys.getGreenColor("Bye bye!!!~~\nSee you again!!~~~"));
+                            MyIO.changeColor("Bye bye!!!~~\nSee you again!!~~~", ConsoleColor.Blue);
+                            Cons
                             break;
                         }
                 }
