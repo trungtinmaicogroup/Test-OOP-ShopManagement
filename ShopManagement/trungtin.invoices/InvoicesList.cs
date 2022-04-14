@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ShopManagement
+namespace ShopManagement.trungtin.invoices
 {
     internal class InvoicesList : List<Invoices>
     {
@@ -19,10 +19,11 @@ namespace ShopManagement
             Console.Clear();
             Console.WriteLine("**************************************************************");
             Console.WriteLine("*   Welcome to my Shop                                       *");
-            Console.WriteLine("*   Select the option bellow (1 ~ 3):                        *");
+            Console.WriteLine("*   Select the option bellow (1 ~ 4):                        *");
             Console.WriteLine("*   1. Show all invoices.                                    *");
             Console.WriteLine("*   2. Add invoice.                                          *");
-            Console.WriteLine("*   3. Quit.                                                 *");
+            Console.WriteLine("*   3. Save file.                                            *");
+            Console.WriteLine("*   4. Quit.                                                 *");
             Console.WriteLine("**************************************************************");
         }
 
@@ -35,7 +36,6 @@ namespace ShopManagement
                 if (getInvoice(id) == null)
                 {
                     this.Add(new Invoices(id));
-                    saveFile();
                     MyIO.changeColor("Add successfully! Please wait 2 seconds!", ConsoleColor.Blue);
                     Thread.Sleep(2000);
                     return;

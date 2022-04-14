@@ -112,7 +112,7 @@ namespace ShopManagement.trungtin.invoices
         }
         public void saveFile()
         {
-            StreamWriter sw = File.AppendText(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\invoices.txt");
+            StreamWriter sw = File.AppendText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\danh_sach_hoa_don.txt");
             sw.WriteLine($"Invoice ID: {_id,-20} \t Date: {_date}");
             sw.WriteLine();
             sw.WriteLine($"Customer information:");

@@ -1,8 +1,10 @@
 ﻿using ShopManagement.trungtin.utils;
+using ShopManagement.trungtin.invoices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ShopManagement
@@ -16,7 +18,7 @@ namespace ShopManagement
             do
             {
                 list.printMenu();
-                choice = MyIO.getInt(1, 3, "Enter your choice: ");
+                choice = MyIO.getInt(1, 4, "Enter your choice: ");
                 switch (choice)
                 {
                     case 1:
@@ -39,14 +41,22 @@ namespace ShopManagement
                             break;
                         }
                      case 3:
-                        {
-                            //list.saveFile(fileName);
-                            //System.out.println(MyToys.getGreenColor("Your datas have been saved in *" + fileName + "*"));
-                            //System.out.println(MyToys.getGreenColor("Bye bye!!!~~\nSee you again!!~~~"));
+                        {                    
+                            Console.WriteLine("\n--------------------------------");
+                            list.saveFile();
+                            MyIO.changeColor("Save successfully at Desktop/danh_sach_hoa_don.txt!!",ConsoleColor.Blue);
+                            Thread.Sleep(2000);
+                            Console.WriteLine("\n--------------------------------");
+                            break;
+                        }  
+                    case 4:
+                        {                        
+                            MyIO.changeColor("Bye bye!!!~~\nSee you again!!~~~",ConsoleColor.Blue);
+                            Thread.Sleep(2000);
                             break;
                         }
-                }
-            } while (choice != 3);
+                                        }
+            } while (choice != 4);
             Console.ReadKey();
         }
     }

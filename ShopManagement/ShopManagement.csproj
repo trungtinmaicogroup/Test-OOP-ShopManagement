@@ -43,19 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InvoicesList.cs" />
     <Compile Include="trungtin.customers\Customers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="trungtin.invoices\InvoicesList.cs" />
     <Compile Include="trungtin.invoices\InvoiceDetails.cs" />
     <Compile Include="trungtin.products\airconditioners\AirConditioners.cs" />
-    <Compile Include="trungtin.products\airconditioners\OneWayAC.cs" />
-    <Compile Include="trungtin.products\airconditioners\TwoWayAC.cs" />
-    <Compile Include="trungtin.products\fans\ElectricFans.cs" />
+    <Compile Include="trungtin.products\airconditioners\one-way-ac\OneWayAC.cs" />
+    <Compile Include="trungtin.products\airconditioners\two-way-ac\TwoWayAC.cs" />
+    <Compile Include="trungtin.products\fans\electric-fan\ElectricFans.cs" />
     <Compile Include="trungtin.products\fans\Fans.cs" />
     <Compile Include="trungtin.invoices\Invoices.cs" />
-    <Compile Include="trungtin.products\fans\StandFans.cs" />
-    <Compile Include="trungtin.products\fans\SteamFans.cs" />
+    <Compile Include="trungtin.products\fans\stand-fan\StandFans.cs" />
+    <Compile Include="trungtin.products\fans\steam-fan\SteamFans.cs" />
     <Compile Include="trungtin.products\Products.cs" />
     <Compile Include="trungtin.utils\MyIO.cs" />
   </ItemGroup>

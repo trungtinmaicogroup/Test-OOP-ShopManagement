@@ -132,7 +132,8 @@ namespace ShopManagement.trungtin.utils
                     Console.Write(inputMsg);
                     date = Console.ReadLine();
                     CultureInfo provider = CultureInfo.InvariantCulture;
-                    dateValue = DateTime.ParseExact(date, "mm/dd/yyyy", provider);
+                    string[] formats = {"dd/MM/yyyy","d/M/yyyy"};
+                    dateValue = DateTime.ParseExact(date, formats, provider,DateTimeStyles.None);
                     return dateValue;
                 }
                 catch (Exception e)
