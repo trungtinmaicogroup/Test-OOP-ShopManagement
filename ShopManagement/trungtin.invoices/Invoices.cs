@@ -77,15 +77,21 @@ namespace ShopManagement.trungtin.invoices
                         {
                             case 1:
                                 {
-                                    return new InvoiceDetails(new StandFans());
+                                    StandFans product = new StandFans();
+                                    int quantity = MyIO.getInt(1, "\t\t\t + Input quanity: ");
+                                    return new InvoiceDetails(product, quantity);
                                 }
                             case 2:
                                 {
-                                    return new InvoiceDetails(new SteamFans());
+                                    SteamFans product = new SteamFans();
+                                    int quantity = MyIO.getInt(1, "\t\t\t + Input quanity: ");
+                                    return new InvoiceDetails(product, quantity);
                                 }
                             case 3:
                                 {
-                                    return new InvoiceDetails(new ElectricFans());
+                                    ElectricFans product = new ElectricFans();
+                                    int quantity = MyIO.getInt(1, "\t\t\t + Input quanity: ");
+                                    return new InvoiceDetails(product, quantity);
                                 }
                         }
                         break;
@@ -98,11 +104,15 @@ namespace ShopManagement.trungtin.invoices
                         {
                             case 1:
                                 {
-                                    return new InvoiceDetails(new OneWayAC());
+                                    OneWayAC product = new OneWayAC();
+                                    int quantity = MyIO.getInt(1, "\t\t\t + Input quanity: ");
+                                    return new InvoiceDetails(product, quantity);
                                 }
                             case 2:
                                 {
-                                    return new InvoiceDetails(new TwoWayAC());
+                                    TwoWayAC product = new TwoWayAC();
+                                    int quantity = MyIO.getInt(1, "\t\t\t + Input quanity: ");
+                                    return new InvoiceDetails(product, quantity);
                                 }
                         }
                         break;

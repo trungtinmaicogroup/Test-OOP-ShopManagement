@@ -127,16 +127,29 @@ namespace ShopManagement.trungtin.invoices
 
         public void saveFile()
         {
-            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\danh_sach_hoa_don.txt", "");
 
-            for (int i = 0; i < this.Count; i++)
+            if (this.Count > 0) {
+                File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\danh_sach_hoa_don.txt", "");
+                for (int i = 0; i < this.Count; i++)
+                {
+                    StreamWriter sw = File.AppendText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\danh_sach_hoa_don.txt");
+                    sw.WriteLine("No: " + (i + 1) + ": ");
+                    sw.Close();
+                    this[i].saveFile();
+                }
+                MyIO.changeColor("Save successfully at Desktop/danh_sach_hoa_don.txt!!",ConsoleColor.Blue);
+                Thread.Sleep(2000);
+                }
+            else
             {
-                StreamWriter sw = File.AppendText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\danh_sach_hoa_don.txt");
-                sw.WriteLine("No: " + (i + 1) + ": ");
-                sw.Close();
-                this[i].saveFile();
+                Console.WriteLine("Empty! Press any key to back to menu");
+                ConsoleKeyInfo key = Console.ReadKey(false);
+                if (key != null)
+                {
+                    MyIO.changeColor("Back to menu! Please wait 2 seconds", ConsoleColor.Blue);
+                    Thread.Sleep(2000);
+                }
             }
-
         }
     }
 }

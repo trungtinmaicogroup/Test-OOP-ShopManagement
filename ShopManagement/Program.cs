@@ -44,8 +44,7 @@ namespace ShopManagement
                         {                    
                             Console.WriteLine("\n--------------------------------");
                             list.saveFile();
-                            MyIO.changeColor("Save successfully at Desktop/danh_sach_hoa_don.txt!!",ConsoleColor.Blue);
-                            Thread.Sleep(2000);
+                            
                             Console.WriteLine("\n--------------------------------");
                             break;
                         }  

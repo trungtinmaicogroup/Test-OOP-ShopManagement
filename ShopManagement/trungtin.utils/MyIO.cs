@@ -103,6 +103,27 @@ namespace ShopManagement.trungtin.utils
                 }
             } while (true);
         }
+        public static double getDouble(double min, string inputMsg, string errMsg)
+        {
+            double n;
+            do
+            {
+                try
+                {
+                    Console.Write(inputMsg);
+                    n = double.Parse(Console.ReadLine());
+                    if (n >= min)
+                    {
+                        return n;
+                    }
+                    changeColor(errMsg, ConsoleColor.Red);
+                }
+                catch (Exception e)
+                {
+                    changeColor(errMsg, ConsoleColor.Red);
+                }
+            } while (true);
+        }
         public static string getRegexString(string regex, string inputMsg, string errorMsg)
         {
             string regexString;
@@ -134,7 +155,14 @@ namespace ShopManagement.trungtin.utils
                     CultureInfo provider = CultureInfo.InvariantCulture;
                     string[] formats = {"dd/MM/yyyy","d/M/yyyy"};
                     dateValue = DateTime.ParseExact(date, formats, provider,DateTimeStyles.None);
+                    if (dateValue < DateTime.Now)
+                    {
                     return dateValue;
+                    } else
+                    {
+                    changeColor("Invalid Date!", ConsoleColor.Red);
+
+                    }
                 }
                 catch (Exception e)
                 {

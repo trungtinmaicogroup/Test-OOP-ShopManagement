@@ -29,7 +29,7 @@ namespace ShopManagement.trungtin.products.fans
             this._id = MyIO.getRegexString(ID_REGEX, "\t\t + Input Electric Fan ID (ELFXXX - X stands for a number): ", "\t\t ID is invalid! Please try again!");
             this._name = "Electric Fan";
             this._placeOfProduction = MyIO.getString("\t\t + Input Place of Production: ", "\t\t Place of Production cannot be empty! Please try again!");
-            this._batteryCapacity = MyIO.getDouble(0, "\t\t + Input Water Capacity: ");
+            this._batteryCapacity = MyIO.getDouble(0, "\t\t + Input Water Capacity: ", "\t\t Water Capacity must be >0");
             this._price = _batteryCapacity * 500;
         }
     }
